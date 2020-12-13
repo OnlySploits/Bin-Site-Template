@@ -1,0 +1,25 @@
+<!DOCTYPEhtml>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Bin Site Template</title>
+<link rel="shortcut icon" href="images/icon.ico"
+<meta property="og:site_name" content="Bin Site">
+<meta property="og:url" content="https://testingphp.onlysploits.repl.co/bin/index.html">
+<meta property="og:title" content="Bin Site">
+<meta property="og:description" content="Bin Site Template By OnlySploits">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#000000">
+</head>
+<script>
+function createbin() {
+  text = document.getElementById('text').value;
+	window.location.replace("api.php?text="+text);
+}
+</script>
+
+<textarea rows="8" cols="22" wrap="physical" id="text" maxlength="2000"></textarea><br>
+<input type="button" value="Create Bin" onclick="createbin()" />
+
+</body>
+</html>
